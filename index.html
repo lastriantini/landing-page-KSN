@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</head>
+<style>
+    body {
+        background-color: #F3F0CA;
+    }
+    nav {
+        padding-top: 30px !important;
+        background-color: #F3F0CA !important;
+    }
+    .img {
+        margin-top: -250px;
+        margin-bottom: -180px;
+    }
+    .about-us {
+        width: 90%;
+        background-color: #192655;
+        color: #E1AA74;
+        padding: 0px 50px 0px 50px;
+        margin-bottom: 50px;
+        font-size: 20px;
+        line-height: 40px;
+    }
+    .product {
+        margin-top: 150px;
+        font-size: 15px;
+        color: #192655;
+    }
+    .product .card {
+        border-radius: 0 150px 150px 0;
+    }
+    .product .justify-content-start img {
+        width: 20%;
+        height: 200%;
+        margin-top: 10px;
+        margin-left : -40px;
+    }
+    .product .justify-content-end img {
+        width: 20%;
+        height: 100%;
+        margin-left : 660px;
+        margin-top: -200px;
+    }
+    .product .justify-content-start .text-left {
+        margin-left: 140px;
+        margin-top: -110px;
+    }
+    .product .justify-content-end .text-right {
+        margin-left: 20px;
+        margin-bottom: -200px;
+        margin-top: 20px;
+    }
+    footer {
+        background-color: #192655;
+        color: #F3F0CA;
+    }
+    .content-3 {
+        margin-top : -200px;
+    }
+    .card {
+        transition: transform 0.5s ease-in-out;
+    }
+    @media only screen and (max-width: 680px) {
+        nav {
+            justify-content: center;
+            height: 70px;
+            width: 100%;
+        }
+        .img {
+            margin-top: -80px;
+        }
+        .content-3 {
+            margin-top: -70px;
+        }
+        .about-us {
+            width: 90%;
+            font-size: 10px !important;
+            line-height: 17px;
+            padding : -10px -100px -10px -100px !important;
+            color: #F3F0CA;
+            border-radius: 200px !important;
+        }
+        .about-us .card-body {
+            width: 130% !important;
+            margin : -10px 130px -10px -40px !important;
+            /* padding: 10px 300px -10px 300px; */
+        }
+
+        .product .justify-content-start img {
+            width: 47%;
+            margin-bottom: -65px;
+            margin-left : -70px;
+        }
+        .product .justify-content-end img {
+            width: 47%;
+            margin-top: -160px;
+            margin-left : 180px;
+        }
+        .product .justify-content-start .text-left {
+            font-size: 11px;
+            line-height: 15px !important;
+            width: 100% !important;
+            margin-left: 40px;
+            margin-top: -50px !important;
+            padding-top: 20px !important;
+        }
+        .product .justify-content-end .text-right {
+            font-size: 11px;
+            line-height: 15px !important;
+            width: 100% !important;
+            margin-left: -45px;
+            margin-bottom: -300px;
+            margin-top: 10px;
+        }
+        .product h4 {
+            font-size: 19px !important;
+            margin-bottom: 3px;
+            padding-top: -100px;
+        }
+        .card {
+            width: 90% !important;
+            height: 40% !important;
+        }
+        
+    }
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg" style="max-height: 60px;">
+        <div class="container-fluid navbarct">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav d-flex justify-content-start mr-auto ml-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">DASHBOARD</a>
+                    </li>
+                    <li class="nav-item ml-5">
+                        <a class="nav-link" href="#about-us">ABOUT US</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav d-flex justify-content-center">
+                    <li class="nav-item">
+                        <img style="width: 60px;" src="img/logo-ksn-crop.png" alt="ksn">
+                    </li>
+                </ul>
+                <ul class="navbar-nav d-flex justify-content-end ml-auto mr-4">
+                    <li class="nav-item mr-5">
+                        <a class="nav-link" href="#product">OUR PRODUCT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content-3">
+        <div id="carouselExampleIndicators" class="carousel slide" width="200px">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/logo-ksn.png" class="d-block w-75 mr-auto ml-auto" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/logo-KSN.png" class="d-block w-75" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/logo-ksn.png" class="d-block w-75" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+    
+
+    <div class="about-us card ml-auto mr-auto rounded-5 mb-5 mt-5" id="about-us">
+        <div class="card-body">
+            <h4 class="text-center mt-4 mb-4 pb-3 fs-2" style="border-bottom: 1.5px solid #F3F0CA">ABOUT US</h4>
+            <p class=" mb-5 text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A consequuntur iure sapiente, quaerat mollitia ullam aut ipsum consectetur reiciendis adipisci quae deleniti veniam earum doloremque nostrum eaque! Nisi, magnam corporis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolore perferendis aliquam itaque eius impedit reiciendis nemo? Voluptatem, maxime! Dolore provident possimus deserunt aut iste sunt dolores hic quidem id.</p>
+        </div>
+    </div>
+
+    <div class="product" id="product">
+        <h1 class="text-center mt-4 mb-5 pb-3 fs-1" style="border-bottom: 1.5px solid #F3F0CA">OUR PRODUCT</h1>
+
+        <div class="card justify-content-start mr-auto mb-5 w-75 product-card" id="product" style="background-color: #E1AA74; color: #192655;">
+            <div class="card-body ms-5 me-5">
+                <img src="img/logo-ksn-crop.png" alt="">
+                <div  class="mb-3 w-75 text-left" style="line-height: 35px;">
+                    <h4>product name</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A consequuntur iure sapiente, quaerat mollitia ullam aut ipsum consectetur reiciendis adipisci quae deleniti veniam earum doloremque nostrum eaque! Nisi, magnam corporis?</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card justify-content-end ml-auto mb-5 w-75 product-card" id="product" style="background-color: #192655; color: #E1AA74; border-radius: 150px 0 0 150px;">
+            <div class="card-body ms-5 me-5">
+                <div  class="mb-3 w-75 text-right" style="line-height: 35px;">
+                    <h4>product name</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A consequuntur iure sapiente, quaerat mollitia ullam aut ipsum consectetur reiciendis adipisci quae deleniti veniam earum doloremque nostrum eaque! Nisi, magnam corporis?</p>
+                </div>
+                <img src="img/logo-ksn-crop.png" alt="">
+            </div>
+        </div>
+
+        <div class="card justify-content-start mr-auto mb-5 w-75 product-card" id="product" style="background-color: #3876BF; color: #F3F0CA">
+            <div class="card-body ms-5 me-5">
+                <img src="img/logo-ksn-crop.png" alt="">
+                <div  class="mb-3 w-75 text-left" style="line-height: 35px;">
+                    <h4>product name</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A consequuntur iure sapiente, quaerat mollitia ullam aut ipsum consectetur reiciendis adipisci quae deleniti veniam earum doloremque nostrum eaque! Nisi, magnam corporis?</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card justify-content-end ml-auto mb-5 w-75 product-card" id="product" style="background-color: #E1AA74; color: #192655; border-radius: 150px 0 0 150px;">
+            <div class="card-body ms-5 me-5">
+                <div  class="mb-3 w-75 text-right" style="line-height: 35px;">
+                    <h4>product name</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A consequuntur iure sapiente, quaerat mollitia ullam aut ipsum consectetur reiciendis adipisci quae deleniti veniam earum doloremque nostrum eaque! Nisi, magnam corporis?</p>
+                </div>
+                <img src="img/logo-ksn-crop.png" alt="">
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="text-center mt-5" id="contact">
+    <section class="mb-4 pt-4">
+      <a
+        data-mdb-ripple-init
+        class="btn text-white btn-floating m-1 rounded-5"
+        style="background-color: #dd4b39;"
+        href="#!"
+        role="button"
+        ><i class="bi bi-envelope-at"></i
+      ></a>
+      <a
+        data-mdb-ripple-init
+        class="btn text-white btn-floating m-1 rounded-5"
+        style="background-color: #ac2bac;"
+        href="#!"
+        role="button"
+        ><i class="bi bi-instagram"></i
+      ></a>
+      <a
+        data-mdb-ripple-init
+        class="btn text-white btn-floating m-1 rounded-5"
+        style="background-color: #0082ca;"
+        href="#!"
+        role="button"
+        ><i class="bi bi-linkedin"></i
+      ></a>
+    </section>
+    </div>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+        <p>contact us</p>
+    </div>
+    </footer>
+
+</body>
+</html>
